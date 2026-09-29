@@ -33,7 +33,7 @@ export const searchFlights = createAsyncThunk(
       // Let's try to fetch from AviationStack if possible
       let apiFlights: Flight[] = [];
       try {
-        const response = await axios.get('http://api.aviationstack.com/v1/flights', {
+        const response = await axios.get('https://api.aviationstack.com/v1/flights', {
           params: {
             access_key: API_KEY,
             dep_iata: params.dep_iata,

@@ -47,7 +47,7 @@ function App() {
   }, [isAuthenticated, dispatch]);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="min-h-screen bg-slate-50 flex flex-col">
         <Navbar />
         <main className="flex-grow">

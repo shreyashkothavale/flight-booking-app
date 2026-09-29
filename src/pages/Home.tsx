@@ -72,7 +72,7 @@ const Home = () => {
             
             <div className="space-y-2">
               <Label>Stops</Label>
-              <Select value={selectedStops} onValueChange={setSelectedStops}>
+              <Select value={selectedStops} onValueChange={(val) => val && setSelectedStops(val)}>
                 <SelectTrigger>
                   <SelectValue placeholder="Any" />
                 </SelectTrigger>
@@ -87,7 +87,7 @@ const Home = () => {
             
             <div className="space-y-2">
               <Label>Departure Time</Label>
-              <Select value={timeSlot} onValueChange={setTimeSlot}>
+              <Select value={timeSlot} onValueChange={(val) => val && setTimeSlot(val)}>
                 <SelectTrigger>
                   <SelectValue placeholder="Any" />
                 </SelectTrigger>

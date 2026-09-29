@@ -45,11 +45,11 @@ const Navbar = () => {
           </>
         ) : (
           <div className="flex items-center gap-3">
-            <Button variant="ghost" asChild>
-              <Link to="/login">Log In</Link>
+            <Button variant="ghost" render={<Link to="/login" />}>
+              Log In
             </Button>
-            <Button asChild>
-              <Link to="/signup">Sign Up</Link>
+            <Button render={<Link to="/signup" />}>
+              Sign Up
             </Button>
           </div>
         )}

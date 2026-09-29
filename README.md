@@ -1,32 +1,32 @@
-# React + TypeScript + Vite
+# Flight Booking App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, responsive flight booking application built with React and TypeScript. 
 
-Currently, two official plugins are available:
+## ✈️ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Search Flights:** Users can search for flights by adjusting parameters like maximum price, number of stops, and preferred departure times (Morning, Afternoon, Evening, Night).
+- **Authentication:** Secure user login and signup functionality.
+- **User Dashboard:** Users can track and manage their personal flight bookings.
+- **Admin Dashboard:** An administrative view for managing flights and overseeing platform bookings.
+- **Modern UI:** Built using Tailwind CSS and Base UI for a clean, accessible, and responsive user experience.
+- **Automated Deployment:** Fully integrated with GitHub Actions for automated, zero-touch deployments to GitHub Pages.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** React, TypeScript, Vite
+- **Styling:** Tailwind CSS
+- **Components:** Base UI, custom reusable components
+- **Routing:** React Router
+- **State Management:** Redux Toolkit
+- **CI/CD:** GitHub Actions (Deploy to GitHub Pages)
 
-## Expanding the Oxlint configuration
+## 🚀 Live Demo
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+[View Live App](https://shreyashkothavale.github.io/flight-booking-app/)
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+## 💻 Running Locally
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
+4. Build for production: `npm run build`
